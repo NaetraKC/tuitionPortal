@@ -39,25 +39,12 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="mainpage.html">Home</a>
+            <a class="nav-link js-scroll-trigger" href="home1.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Courses</a>
-            <div class="dropdown-content">
-             <a href="#">Courses List</a>
-             <a href="#">My courses</a>
-             <a href="#">Link 3</a>
-            </div>
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="liveStream.html">Live stream</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="discussionForum.html">Discussion Forum</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="profile.html">Profile</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
           </li>
@@ -73,7 +60,46 @@
         <div class="intro-lead-in">Online Tutors ready to help you 24/7.</div>
         <div class="intro-lead-in">Give your grades a boost</div>
         
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href=tutor_signup.html>Become a tutor</a>
         
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+      <!-- Login -->  
+      <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <h1>Login</h1>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" formaction="mainpage.html">Login</button>
+      <label>
+        <a href=signup_student.html>Sign up for free</a>
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#002366">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+  </form>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 
         
